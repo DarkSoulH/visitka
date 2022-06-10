@@ -1,0 +1,71 @@
+body{
+  background-color: #f7f7f7;
+}
+
+.main_section{
+  display: flex;
+  margin: 0 auto;
+
+  width: 720px;
+
+  background: white;
+}
+
+.my_sidebar{
+  width: 200px;
+
+  background: #cacaca;
+}
+
+.my_img{
+  margin: 10px 21px 10px 21px;
+
+  text-align: center;
+}
+
+.img{
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  /* outline: 1px solid #000;
+  border: 3px solid #cacaca; */
+
+  outline: 1px solid black;
+  outline-offset: 3px;
+}
+
+.main_content{
+  width: 520px;
+}
+
+.about_me{
+  text-transform: uppercase;
+
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+  margin-top: 30px;
+  margin-bottom: 5px;
+
+  color: black;
+
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+span{
+  color: #c4c0c0;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+
