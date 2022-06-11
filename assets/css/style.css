@@ -6,13 +6,13 @@ body{
   display: flex;
   margin: 0 auto;
 
-  width: 720px;
+  width: 810px;
 
   background: white;
 }
 
 .my_sidebar{
-  width: 200px;
+  width: 250px;
 
   background: #cacaca;
 }
@@ -24,8 +24,8 @@ body{
 }
 
 .img{
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
 
   border-radius: 50%;
 
@@ -37,35 +37,36 @@ body{
 }
 
 .main_content{
-  width: 520px;
+  width: 526px;
+
+  margin-left: 20px;
 }
 
-.about_me{
+.main_content_about_me{
   text-transform: uppercase;
-
   text-align: center;
+
   letter-spacing: 5px;
   font-family: 'Roboto Mono', monospace;
 }
 
-h1{
+.main_content_about_me h1{
   margin-top: 30px;
   margin-bottom: 5px;
 
   color: black;
 
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1.1;
   font-weight: 700;
 }
 
-span{
+.main_content_about_me span{
   color: #c4c0c0;
 
   font-size: 15px;
   font-weight: 600;
 }
-
 
 
