@@ -51,12 +51,8 @@ body {
   margin-top: 25px;
   margin-bottom: 15px;
 
-  font-size: 20px;
   font-weight: 600;
   line-height: 1;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .contact_icon {
@@ -119,41 +115,31 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 
-  font-size: 20px;
   font-weight: 600;
   line-height: 1;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .skills h3 {
-  font-size: 12px;
   font-weight: 300;
   line-height: 1;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
-.hard,
-.soft {
+.some_skills {
   margin-top: 15px;
   margin-bottom: 30px;
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 7px;
-  column-gap: 7px;
+  gap: 7px;
 }
 
 .tag_button {
   height: 25px;
 
-  padding: 5px 5px;
+  padding: 5px;
 
-  background: #f7f7f7;;
+  background: #f7f7f7;
   border-radius: 4px;
   flex-grow: 0;
 
@@ -163,17 +149,9 @@ body {
   font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.tag_button:hover {
+  cursor: pointer;
+}
 
 .main_content {
   width: 480px;
@@ -213,12 +191,8 @@ body {
 
   color: black;
 
-  font-size: 20px;
   line-height: 1.1;
   font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .main_content_profile p {
@@ -236,12 +210,8 @@ body {
 .my_works h2 {
   color: black;
 
-  font-size: 20px;
   line-height: 1.1;
   font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .my_work_enzym {
@@ -250,21 +220,12 @@ body {
 }
 
 .my_work_enzym h3 {
-  font-size: 12px;
   font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .my_work_time {
   margin-top: 10px;
   margin-bottom: 10px;
-
-  font-size: 12px;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .my_work_title {
@@ -275,11 +236,7 @@ body {
 }
 
 .my_work_svitoch h3 {
-  font-size: 12px;
   font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .my_work_do {
@@ -291,4 +248,20 @@ body {
 
 ul, ul li {
   list-style-type: disc;
+}
+
+.helpers_font_12 {
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.helpers_font_20 {
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
 }
