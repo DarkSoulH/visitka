@@ -249,7 +249,8 @@ a.reviews_star {
   line-height: 1.4;
 }
 
-ul, ul li {
+my_work_do ul,
+my_work_do ul li {
   list-style-type: disc;
 }
 
