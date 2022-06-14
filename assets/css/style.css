@@ -63,13 +63,16 @@ body {
 }
 
 .reviews_star {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
   width: 35px;
   height: 35px;
 
   border: 1px solid black;
   border-radius: 50%;
-
-  line-height: 2;
 
   transition: color .1s linear;
   transition: background-color .1s linear;
