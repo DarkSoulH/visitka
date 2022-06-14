@@ -59,6 +59,8 @@ body {
 
 .contact_icon {
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: space-between;
 
   text-align: center;
@@ -71,7 +73,7 @@ body {
   border: 1px solid black;
   border-radius: 50%;
 
-  padding-top: 8px;
+  line-height: 2;
 
   transition: color .1s linear;
   transition: background-color .1s linear;
