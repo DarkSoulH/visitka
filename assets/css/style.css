@@ -254,7 +254,7 @@ my_work_do ul li {
   list-style-type: disc;
 }
 
-.helpers_font_12 {
+.helpers_sub_titles_date {
   font-size: 12px;
 
   text-transform: uppercase;
@@ -262,7 +262,15 @@ my_work_do ul li {
   letter-spacing: 2px;
 }
 
-.helpers_font_20 {
+.helpers_date {
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.helpers_titles {
   font-size: 20px;
 
   text-transform: uppercase;
