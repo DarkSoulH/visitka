@@ -62,9 +62,9 @@ body {
   text-align: center;
 }
 
-.reviews_star {
+a.reviews_star {
   display: flex;
-  
+
   justify-content: center;
   align-items: center;
 
