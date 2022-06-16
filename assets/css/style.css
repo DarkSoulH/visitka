@@ -108,7 +108,10 @@ a.reviews_star {
   text-decoration: underline;
 }
 
-.skills {
+.skills,
+.language,
+.wish,
+.dream {
   width: 80%;
 
   margin: 0 auto;
@@ -127,7 +130,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.some_skills {
+.some_list {
   margin-top: 15px;
   margin-bottom: 30px;
 
@@ -251,6 +254,14 @@ a.reviews_star {
 
 ul.my_work_do li {
   list-style-type: disc;
+}
+
+.language,
+.wish,
+.dream h2 {
+  font-weight: 600;
+  
+  line-height: 1;
 }
 
 .helpers_sub_titles_date {
