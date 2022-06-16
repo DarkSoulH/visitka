@@ -260,11 +260,29 @@ ul.my_work_do li {
 .wish,
 .dream h2 {
   font-weight: 600;
-  
+
   line-height: 1;
 }
 
-.helpers_sub_titles_date {
+.my_education h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  color: black;
+
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.my_education_time {
+  margin-bottom: 20px;
+}
+
+.my_education_time li {
+  padding-bottom: 8px;
+}
+
+.helpers_sub_titles {
   font-size: 12px;
 
   text-transform: uppercase;
