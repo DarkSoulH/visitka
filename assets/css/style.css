@@ -10,7 +10,7 @@ body {
   display: flex;
   margin: 0 auto;
 
-  width: 770px;
+  width: 800px;
 
   background: white;
 
@@ -20,11 +20,13 @@ body {
 .my_sidebar {
   width: 270px;
 
+  margin: 0 auto;
+
   background: #cacaca;
 }
 
 .my_img {
-  margin: 10px 21px 10px 21px;
+  width: 80%;
 
   text-align: center;
 }
@@ -49,12 +51,8 @@ body {
   margin-top: 25px;
   margin-bottom: 15px;
 
-  font-size: 20px;
   font-weight: 600;
   line-height: 1;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .contact_icon {
@@ -66,14 +64,17 @@ body {
   text-align: center;
 }
 
-.reviews_star {
+a.reviews_star {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
   width: 35px;
   height: 35px;
 
   border: 1px solid black;
   border-radius: 50%;
-
-  line-height: 2;
 
   transition: color .1s linear;
   transition: background-color .1s linear;
@@ -109,10 +110,58 @@ body {
   text-decoration: underline;
 }
 
+.skills {
+  width: 80%;
+
+  margin: 0 auto;
+}
+
+.skills h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  font-weight: 600;
+  line-height: 1;
+}
+
+.skills h3 {
+  font-weight: 300;
+  line-height: 1;
+}
+
+.some_skills {
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.tag_button {
+  height: 25px;
+
+  padding: 5px;
+
+  background: #f7f7f7;
+  border-radius: 4px;
+  flex-grow: 0;
+
+  color: #353a3f;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.tag_button:hover {
+  cursor: pointer;
+}
+
 .main_content {
   width: 480px;
 
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .main_content_about_me {
@@ -147,12 +196,8 @@ body {
 
   color: black;
 
-  font-size: 20px;
   line-height: 1.1;
   font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .main_content_profile p {
@@ -162,3 +207,75 @@ body {
   font-weight: 600;
 }
 
+.my_works {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my_works h2 {
+  color: black;
+
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.my_work_enzym {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my_work_enzym h3 {
+  font-weight: 700;
+}
+
+.my_work_time {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my_work_title {
+  margin-bottom: 10px;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.my_work_svitoch h3 {
+  font-weight: 700;
+}
+
+.my_work_do {
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+my_work_do ul,
+my_work_do ul li {
+  list-style-type: disc;
+}
+
+.helpers_sub_titles_date {
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.helpers_date {
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.helpers_titles {
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
