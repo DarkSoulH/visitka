@@ -20,14 +20,10 @@ body {
 .my_sidebar {
   width: 270px;
 
-  margin: 0 auto;
-
   background: #cacaca;
 }
 
 .my_img {
-  width: 80%;
-
   text-align: center;
 }
 
@@ -110,7 +106,10 @@ a.reviews_star {
   text-decoration: underline;
 }
 
-.skills {
+.skills,
+.language,
+.wish,
+.dream {
   width: 80%;
 
   margin: 0 auto;
@@ -129,7 +128,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.some_skills {
+.some_list {
   margin-top: 15px;
   margin-bottom: 30px;
 
@@ -161,7 +160,7 @@ a.reviews_star {
 .main_content {
   width: 480px;
 
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .main_content_about_me {
@@ -251,12 +250,35 @@ a.reviews_star {
   line-height: 1.4;
 }
 
-my_work_do ul,
-my_work_do ul li {
+ul.my_work_do li {
   list-style-type: disc;
 }
 
-.helpers_sub_titles_date {
+.language,
+.wish,
+.dream h2 {
+  font-weight: 600;
+}
+
+.my_education h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  color: black;
+
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.my_education_time {
+  margin-bottom: 20px;
+}
+
+.my_education_time li {
+  padding-bottom: 8px;
+}
+
+.helpers_sub_titles {
   font-size: 12px;
 
   text-transform: uppercase;
