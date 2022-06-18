@@ -108,16 +108,13 @@ a.reviews_star {
   text-decoration: underline;
 }
 
-.skills,
-.language,
-.wish,
-.dream {
+.my_sidebar_sections {
   width: 80%;
 
   margin: 0 auto;
 }
 
-.skills h2 {
+.my_sidebar_sections h2 {
   margin-top: 25px;
   margin-bottom: 25px;
 
@@ -125,7 +122,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.skills h3 {
+.my_sidebar_sections h3 {
   font-weight: 300;
   line-height: 1;
 }
