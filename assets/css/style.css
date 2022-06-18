@@ -140,7 +140,7 @@ a.reviews_star {
   gap: 7px;
 }
 
-.tag_button {
+.tag_list {
   height: 25px;
 
   padding: 5px;
@@ -153,10 +153,6 @@ a.reviews_star {
 
   font-size: 10px;
   font-weight: 500;
-}
-
-.tag_button:hover {
-  cursor: pointer;
 }
 
 .main_content {
