@@ -10,7 +10,7 @@ body {
   display: flex;
   margin: 0 auto;
 
-  width: 800px;
+  width: 770px;
 
   background: white;
 
@@ -156,9 +156,7 @@ a.reviews_star {
 }
 
 .main_content {
-  width: 480px;
-
-  margin-left: 35px;
+  width: 500px;
 }
 
 .main_content_about_me {
@@ -185,6 +183,10 @@ a.reviews_star {
 
   font-size: 15px;
   font-weight: 600;
+}
+
+.main_content_body {
+  margin-left: 35px;
 }
 
 .main_content_profile h2 {
