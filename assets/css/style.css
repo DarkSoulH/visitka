@@ -10,7 +10,7 @@ body {
   display: flex;
   margin: 0 auto;
 
-  width: 800px;
+  width: 770px;
 
   background: white;
 
@@ -25,6 +25,8 @@ body {
 
 .my_img {
   text-align: center;
+
+  margin-top: 10px;
 }
 
 .img {
@@ -106,16 +108,13 @@ a.reviews_star {
   text-decoration: underline;
 }
 
-.skills,
-.language,
-.wish,
-.dream {
+.my_sidebar_sections {
   width: 80%;
 
   margin: 0 auto;
 }
 
-.skills h2 {
+.my_sidebar_sections h2 {
   margin-top: 25px;
   margin-bottom: 25px;
 
@@ -123,7 +122,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.skills h3 {
+.my_sidebar_sections h3 {
   font-weight: 300;
   line-height: 1;
 }
@@ -138,7 +137,7 @@ a.reviews_star {
   gap: 7px;
 }
 
-.tag_button {
+.tag_list {
   height: 25px;
 
   padding: 5px;
@@ -153,14 +152,8 @@ a.reviews_star {
   font-weight: 500;
 }
 
-.tag_button:hover {
-  cursor: pointer;
-}
-
 .main_content {
-  width: 480px;
-
-  margin-left: 35px;
+  width: 500px;
 }
 
 .main_content_about_me {
@@ -187,6 +180,10 @@ a.reviews_star {
 
   font-size: 15px;
   font-weight: 600;
+}
+
+.main_content_body {
+  margin-left: 35px;
 }
 
 .main_content_profile h2 {
