@@ -251,12 +251,6 @@ ul.my_work_do li {
   list-style-type: disc;
 }
 
-.language,
-.wish,
-.dream h2 {
-  font-weight: 600;
-}
-
 .my_education h2 {
   margin-top: 30px;
   margin-bottom: 30px;
