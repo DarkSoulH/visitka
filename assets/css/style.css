@@ -311,7 +311,7 @@ ul.my_work_do li {
   letter-spacing: 2px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .main_section {
     display: block;
 
