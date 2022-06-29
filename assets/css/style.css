@@ -143,7 +143,7 @@ a.reviews_star {
   gap: 7px;
 }
 
-.tag_list {
+.some_list li {
   height: 25px;
 
   padding: 5px;
