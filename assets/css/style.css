@@ -30,8 +30,8 @@ body {
 }
 
 .switch {
-  margin-top: 10px;
-  margin-left: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
 }
 
 input[type="checkbox"] {
@@ -358,7 +358,7 @@ ul.my_work_do li {
 @media screen and (max-width: 768px) {
   .main_section {
     display: block;
-    
+
     margin: 0 auto;
 
     box-shadow: rgba(149, 157, 165, 0.2) 1px 2px 10px 10px;
