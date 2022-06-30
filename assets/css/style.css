@@ -53,13 +53,13 @@ input[type="checkbox"]::before {
   content: '';
   position: absolute;
 
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 
   border-radius: 20px;
-  border: 2px solid black;
+  border: 1px solid black;
 
-  top: 1px;
+  top: 2px;
   left: 2px;
 
   background: linear-gradient(to top left, yellow, blue);
@@ -68,7 +68,7 @@ input[type="checkbox"]::before {
 }
 
 input:checked[type="checkbox"]::before {
-  left: 20px;
+  left: 22px;
 
   background: linear-gradient(to top right, red, white, blue);
 }
