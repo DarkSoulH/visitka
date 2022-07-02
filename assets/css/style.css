@@ -369,7 +369,7 @@ ul.my_work_do li {
   }
 
   .img {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .my_sidebar_cells {
@@ -439,5 +439,62 @@ ul.my_work_do li {
 
   .my_education {
     padding-bottom: 15px;
+  }
+
+  .my_education_time:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 563px) {
+  .main_content {
+    padding: 0 5px;
+  }
+
+  .img {
+    margin-top: 0;
+  }
+
+  .my_sidebar_cells {
+    grid-template-columns: 360px;
+    grid-template-rows: 121px 95px 132px 75px 74px 150px;
+
+    grid-template-areas: "contacts"
+                         "skills"
+                         "skills"
+                         "language"
+                         "wish"
+                         "dream";
+  }
+
+  .my_sidebar_cells h2 {
+    text-align: center;
+  }
+
+  .work {
+    display: block;
+  }
+
+  .my_work_svitoch {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .my_sidebar_cells {
+    grid-template-columns: 300px;
+    grid-template-rows: 121px 95px 197px 75px 107px 150px;
+  }
+
+  .mobile h1 {
+    font-size: 20px;
+  }
+
+  .mobile span {
+    font-size: 10px;
+  }
+
+  .my_sidebar_cells h2 {
+    font-size: 18px;
   }
 }
