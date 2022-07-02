@@ -133,7 +133,7 @@ a.reviews_star {
   background-color: black;
 }
 
-.contact_tel {
+a[href^="tel:"] {
   margin-top: 10px;
   margin-bottom: 5px;
 
@@ -142,11 +142,11 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_tel:hover {
+a[href^="tel:"]:hover {
   text-decoration: underline;
 }
 
-.contact_email {
+a[href^="mailto:"] {
   margin-bottom: 20px;
 
   font-size: 12px;
@@ -154,7 +154,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_email:hover {
+a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
