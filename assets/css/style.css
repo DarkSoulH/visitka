@@ -30,8 +30,20 @@ body {
 }
 
 .switch {
+  display: flex;
+
+  padding-left: 10px;
   padding-top: 10px;
-  padding-left: 15px;
+}
+
+.switch span {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--roboto);
+}
+
+.switch input {
+  margin: 0 5px;
 }
 
 input[type="checkbox"] {
@@ -75,8 +87,6 @@ input:checked[type="checkbox"]::before {
 
 .my_img {
   text-align: center;
-
-  margin-top: 10px;
 }
 
 .img {
@@ -368,10 +378,6 @@ ul.my_work_do li {
     width: 100%;
   }
 
-  .img {
-    margin-top: 15px;
-  }
-
   .my_sidebar_cells {
     display: grid;
     justify-content: center;
@@ -449,10 +455,6 @@ ul.my_work_do li {
 @media (max-width: 563px) {
   .main_content {
     padding: 0 5px;
-  }
-
-  .img {
-    margin-top: 0;
   }
 
   .my_sidebar_cells {
