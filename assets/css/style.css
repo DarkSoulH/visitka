@@ -52,7 +52,7 @@ input[type="checkbox"] {
   width: 36px;
   height: 16px;
 
-  -webkit-appearance: none;
+  appearance: none;
   outline: none;
 
   background: #fff;
