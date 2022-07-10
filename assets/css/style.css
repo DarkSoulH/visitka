@@ -29,10 +29,64 @@ body {
   background: #cacaca;
 }
 
+.switch {
+  display: flex;
+
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.switch label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--roboto);
+}
+
+.switch input {
+  margin: 0 5px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+
+  width: 36px;
+  height: 16px;
+
+  appearance: none;
+  outline: none;
+
+  background: #fff;
+
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  top: 2px;
+  left: 2px;
+
+  background: linear-gradient(to top left, yellow, blue);
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+input:checked[type="checkbox"]::before {
+  left: 22px;
+
+  background: linear-gradient(to top right, red, white, blue);
+}
+
 .my_img {
   text-align: center;
-
-  margin-top: 10px;
 }
 
 .img {
@@ -89,7 +143,7 @@ a.reviews_star {
   background-color: black;
 }
 
-.contact_tel {
+a[href^="tel:"] {
   margin-top: 10px;
   margin-bottom: 5px;
 
@@ -98,11 +152,11 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_tel:hover {
+a[href^="tel:"]:hover {
   text-decoration: underline;
 }
 
-.contact_email {
+a[href^="mailto:"] {
   margin-bottom: 20px;
 
   font-size: 12px;
@@ -110,7 +164,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_email:hover {
+a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
@@ -311,21 +365,17 @@ ul.my_work_do li {
   letter-spacing: 2px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main_section {
     display: block;
 
+    margin: 0 auto;
+
     box-shadow: rgba(149, 157, 165, 0.2) 1px 2px 10px 10px;
-    border-radius: 2%;
   }
 
   .my_sidebar {
     width: 100%;
-    border-radius: 2% 2% 0 0;
-  }
-
-  .img {
-    margin-top: 30px;
   }
 
   .my_sidebar_cells {
@@ -395,5 +445,58 @@ ul.my_work_do li {
 
   .my_education {
     padding-bottom: 15px;
+  }
+
+  .my_education_time:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 563px) {
+  .main_content {
+    padding: 0 5px;
+  }
+
+  .my_sidebar_cells {
+    grid-template-columns: 360px;
+    grid-template-rows: 121px 95px 132px 75px 74px 150px;
+
+    grid-template-areas: "contacts"
+                         "skills"
+                         "skills"
+                         "language"
+                         "wish"
+                         "dream";
+  }
+
+  .my_sidebar_cells h2 {
+    text-align: center;
+  }
+
+  .work {
+    display: block;
+  }
+
+  .my_work_svitoch {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .my_sidebar_cells {
+    grid-template-columns: 300px;
+    grid-template-rows: 121px 95px 197px 75px 107px 150px;
+  }
+
+  .mobile h1 {
+    font-size: 20px;
+  }
+
+  .mobile span {
+    font-size: 10px;
+  }
+
+  .my_sidebar_cells h2 {
+    font-size: 18px;
   }
 }
