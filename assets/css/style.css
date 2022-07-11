@@ -8,35 +8,105 @@ body {
 
 .main_section {
   display: flex;
-  margin: 0 auto;
+  margin: 50px auto;
 
-  width: 770px;
+  max-width: 770px;
 
   background: white;
 
   font-family: var(--roboto);
+
+  transition: box-shadow .2s;
+}
+
+.main_section:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 1px 2px 40px 50px;
 }
 
 .my_sidebar {
-  width: 270px;
+  width: 35%;
 
   background: #cacaca;
 }
 
-.my_img {
-  text-align: center;
+.switch {
+  display: flex;
 
-  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.img {
+.switch label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--roboto);
+}
+
+.switch input {
+  margin: 0 5px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+
+  width: 36px;
+  height: 16px;
+
+  appearance: none;
+  outline: none;
+
+  background: #fff;
+
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+  content: '';
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  top: 2px;
+  left: 2px;
+
+  background: linear-gradient(to top left, yellow, blue);
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+input:checked[type="checkbox"]::before {
+  left: 22px;
+
+  background: linear-gradient(to top right, red, white, blue);
+}
+
+.my_img {
+  overflow: hidden;
+
   width: 180px;
   height: 180px;
+
+  margin: 10px auto;
 
   border-radius: 50%;
 
   outline: 1px solid black;
   outline-offset: 3px;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  top: -20px;
 }
 
 .contact {
@@ -83,7 +153,7 @@ a.reviews_star {
   background-color: black;
 }
 
-.contact_tel {
+a[href^="tel:"] {
   margin-top: 10px;
   margin-bottom: 5px;
 
@@ -92,11 +162,11 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_tel:hover {
+a[href^="tel:"]:hover {
   text-decoration: underline;
 }
 
-.contact_email {
+a[href^="mailto:"] {
   margin-bottom: 20px;
 
   font-size: 12px;
@@ -104,7 +174,7 @@ a.reviews_star {
   line-height: 1;
 }
 
-.contact_email:hover {
+a[href^="mailto:"]:hover {
   text-decoration: underline;
 }
 
@@ -137,7 +207,7 @@ a.reviews_star {
   gap: 7px;
 }
 
-.tag_list {
+.some_list li {
   height: 25px;
 
   padding: 5px;
@@ -153,7 +223,7 @@ a.reviews_star {
 }
 
 .main_content {
-  width: 500px;
+  width: 65%;
 }
 
 .main_content_about_me {
@@ -251,12 +321,6 @@ ul.my_work_do li {
   list-style-type: disc;
 }
 
-.language,
-.wish,
-.dream h2 {
-  font-weight: 600;
-}
-
 .my_education h2 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -273,6 +337,18 @@ ul.my_work_do li {
 
 .my_education_time li {
   padding-bottom: 8px;
+}
+
+.tablet {
+  display: none;
+}
+
+.tablet h1 {
+  font-size: 25px;
+}
+
+.tablet span {
+  color: #999191;
 }
 
 .helpers_sub_titles {
@@ -297,4 +373,140 @@ ul.my_work_do li {
   text-transform: uppercase;
 
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .main_section {
+    display: block;
+
+    margin: 0 auto;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 1px 2px 10px 10px;
+  }
+
+  .my_sidebar {
+    width: 100%;
+  }
+
+  .my_sidebar_cells {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 270px 250px;
+    grid-template-rows: 130px 120px;
+    grid-gap: 20px 40px;
+
+    grid-template-areas: "contacts language"
+                         "skills wish"
+                         "skills dream";
+  }
+
+  .my_sidebar_cells .contacts { grid-area: contacts; }
+  .my_sidebar_cells .skills   { grid-area: skills; }
+  .my_sidebar_cells .language { grid-area: language; }
+  .my_sidebar_cells .wish     { grid-area: wish; }
+  .my_sidebar_cells .dream    { grid-area: dream; }
+
+  .main_content {
+    width: 100%;
+  }
+
+  .main_content_about_me {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+
+  .main_content_body {
+    margin-left: 0;
+  }
+
+  .main_content_profile,
+  .my_education,
+  .my_works h2 {
+    text-align: center;
+  }
+
+  .main_content_profile h2 {
+    margin-top: 30px;
+  }
+
+  .my_works {
+    margin-bottom: 0;
+  }
+
+  .work {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+  }
+
+  .my_work_enzym {
+    margin: 0 0;
+  }
+
+  .my_work_enzym,
+  .my_work_svitoch {
+    margin-left: 40px;
+  }
+
+  .my_education {
+    padding-bottom: 15px;
+  }
+
+  .my_education_time:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 563px) {
+  .main_content {
+    padding: 0 5px;
+  }
+
+  .my_sidebar_cells {
+    grid-template-columns: 360px;
+    grid-template-rows: 121px 95px 132px 75px 74px 150px;
+
+    grid-template-areas: "contacts"
+                         "skills"
+                         "skills"
+                         "language"
+                         "wish"
+                         "dream";
+  }
+
+  .my_sidebar_cells h2 {
+    text-align: center;
+  }
+
+  .work {
+    display: block;
+  }
+
+  .my_work_svitoch {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .my_sidebar_cells {
+    grid-template-columns: 300px;
+    grid-template-rows: 121px 95px 197px 75px 107px 150px;
+  }
+
+  .mobile h1 {
+    font-size: 20px;
+  }
+
+  .mobile span {
+    font-size: 10px;
+  }
+
+  .my_sidebar_cells h2 {
+    font-size: 18px;
+  }
 }
